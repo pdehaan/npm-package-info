@@ -1,0 +1,32 @@
+{
+  "name": "npm-package-info",
+  "description": "Fetch npm package info via pacote.",
+  "version": "1.0.0",
+  "author": "Peter deHaan",
+  "bugs": {
+    "url": "https://github.com/pdehaan/npm-package-info/issues"
+  },
+  "dependencies": {
+    "pacote": "^11.3.5",
+    "semver": "^7.3.5",
+    "sort-json": "^2.0.0"
+  },
+  "files": [
+    "lib.js"
+  ],
+  "homepage": "https://github.com/pdehaan/npm-package-info#readme",
+  "keywords": [
+    "npm",
+    "pacote",
+    "semver"
+  ],
+  "license": "MPL-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/npm-package-info.git"
+  },
+  "scripts": {
+    "test": "node test.mjs"
+  }
+}
