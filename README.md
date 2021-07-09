@@ -10,7 +10,7 @@ npm i pdehaan/npm-package-info
 
 ## USAGE
 
-```sh
+```js
 const { getPackage } = require("npm-package-info");
 
 getPackage("@11ty/eleventy")
