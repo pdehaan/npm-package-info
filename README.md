@@ -19,7 +19,7 @@ getPackage("@11ty/eleventy")
 
 ### OUTPUT
 
-```text
+```js
 {
   _cached: false,
   _contentLength: 0,
