@@ -1,4 +1,5 @@
-const { getPackage } = await import("./lib.js");
+import { inspect } from "util";
+import { getPackage } from "./lib.js";
 
 const pkg = await getPackage("@11ty/eleventy");
-console.log(pkg);
+console.log(inspect(pkg, {depth: 1}));
