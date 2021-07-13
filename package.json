@@ -7,6 +7,7 @@
     "url": "https://github.com/pdehaan/npm-package-info/issues"
   },
   "dependencies": {
+    "list-npm-contents": "^1.0.2",
     "pacote": "^11.3.5",
     "semver": "^7.3.5",
     "sort-json": "^2.0.0"

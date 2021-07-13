@@ -1,3 +1,4 @@
+const listNpmContents = require("list-npm-contents");
 const pacote = require("pacote");
 const semver = require("semver");
 const sortJson = require("sort-json");
@@ -7,11 +8,14 @@ module.exports = {
 };
 
 async function getPackage(name = "", fullMetadata = true) {
-  const [manifest, packument] = await Promise.all([
+  const [manifest, packument, files] = await Promise.all([
     pacote.manifest(name, { fullMetadata }),
     pacote.packument(name, { fullMetadata }),
+    listNpmContents(name, "latest"),
   ]);
 
+  // Inject a sorted array of the package's files (from the tarball) into the manifest's `dist` object.
+  manifest.dist.files = files.sort((a, b) => String(a).localeCompare(b));
   const res = sortJson(Object.assign({}, manifest, packument));
   // `time` and `versions` can be `undefined` if `fullMetadata` is `false`.
   if (res.time) {

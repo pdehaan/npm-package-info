@@ -105,6 +105,7 @@ getPackage("@11ty/eleventy")
   directories: {},
   dist: {
     fileCount: 71,
+    files: [Array],
     integrity: 'sha512-YGG1Vk0IPXsExSAwIyv6zccxxlaxXLb4PvO/G+SW66Dsz2l1ZSObJuukVTLc6iMpqZCS+LZQNXnaqG9PuRmy7w==',
     'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\n' +
       'Version: OpenPGP.js v3.0.13\r\n' +
